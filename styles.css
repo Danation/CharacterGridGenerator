@@ -1,0 +1,29 @@
+table {
+	border-collapse: collapse;
+}
+td {
+	width: 1em;
+}
+table, td {
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* Upper Left Corner */
+.noBorder {
+	border-left-color: rgba(255,0,0,0);
+	border-top-color: rgba(255,0,0,0);
+}
+/* Row and Column Labels */
+.label {
+	font-weight: bold;
+}
+
+@media print {
+	body * {
+		visibility:hidden;
+	} 
+	#printable, #printable * {
+		visibility:visible;
+	}
+}
